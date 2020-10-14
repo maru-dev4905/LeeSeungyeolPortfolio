@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@media all and (max-width:768px){
+    /* home */
+    .about__button{
+        width: 280px;
+        height: 280px;
+    }
+    .home article h1{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .about__button h1+h1::before{
+        bottom: -10px;
+    }
+}

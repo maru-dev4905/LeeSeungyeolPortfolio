@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@media all and (max-width:360px){
+    /* home */
+    .about__button{
+        width: 230px;
+        height: 230px;
+    }
+    .home article h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .home article:not(.about__button){
+        width: 100vw;
+        height: 50vh;
+    }
+    .develop__button{
+        top: 0;
+    }
+    .design__button{
+        top: auto;
+        bottom: 0;
+    }
+    .home article h2{
+        bottom: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
