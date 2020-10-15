@@ -26,6 +26,20 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .design article:nth-child(1n){
+        grid-column: 1/13;
+    }
+    .design article:nth-child(2n){
+        grid-column: 1/13;
+    }
+    .design article:nth-child(3),
+    .design article:nth-child(4),
+    .design article:nth-child(7),
+    .design article:nth-child(8){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media all and (max-width:768px){
@@ -68,7 +82,11 @@
         width: 100%;
         margin-bottom: 5%;
     }
-    .develop article .develop__card{
+    .design article img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    article .work__card{
         width: 100%;
     }
     .develop article:nth-child(1),
@@ -90,7 +108,26 @@
         line-height: 28px;
         margin-bottom: 5%;
     }
-    .develop .develop__card a{
+    .design article:nth-child(1),
+    .design article:nth-child(2),
+    .design article:nth-child(5),
+    .design article:nth-child(6)
+    {
+        flex-direction: column;
+    }
+    .design article:nth-child(3),
+    .design article:nth-child(4),
+    .design article:nth-child(7),
+    .design article:nth-child(8){
+        flex-direction: column;
+    }
+    .design article p{
+        font-size: 18px;
+        font-family: "ubuntu-400";
+        line-height: 28px;
+        margin-bottom: 5%;
+    }
+     .work__card a{
         height: 50px;
     }
 }
