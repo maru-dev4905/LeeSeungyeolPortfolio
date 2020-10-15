@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@media all and (max-width:1100px){
+    .profile__img{
+        left: 70%;
+    }
+    .profile__img img{
+        width: 263px;
+        height: 336px;
+    }
+}
+
 @media all and (max-width:768px){
     /* home */
     .about__button{
@@ -12,5 +22,26 @@
     }
     .about__button h1+h1::before{
         bottom: -10px;
+    }
+    /* profile */
+    .about__profile {
+        height: 120vh;
+    }
+    .profile__img{
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile__content{
+        top: auto;
+        transform: none;
+        bottom: 0;
+        width: 100%;
+    }
+    .profile__content__container{
+        min-width: 320px;
+    }
+    .profile__content article{
+        min-width: 100%;
     }
 }
