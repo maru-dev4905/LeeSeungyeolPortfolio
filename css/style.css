@@ -320,6 +320,99 @@
     font-family: "ubuntu-700";
 }
 
+/* develop */
+.develop{
+    background-color: #C3ECE4;
+    width: 100vw;
+}
+.develop .develop__container{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 20px;
+    padding: 200px 20px;
+}
+.develop article{
+    margin-bottom: 50px;
+    transition: 0.3s ease;
+}
+.develop article:last-child{
+    margin-bottom: 0;
+}
+.develop article:nth-child(1),
+.develop article:nth-child(2),
+.develop article:nth-child(5),
+.develop article:nth-child(6)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.develop article:nth-child(3),
+.develop article:nth-child(4),
+.develop article:nth-child(7),
+.develop article:nth-child(8){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.develop article img{
+    width: calc(50% - 20px);
+    height: 100%;
+}
+.develop article .develop__card{
+    width: calc(50% - 20px);
+}
+.develop article:nth-child(1n){
+    grid-column: 1/7;
+}
+.develop article:nth-child(2n){
+    grid-column: 7/13;
+}
+.develop article h2{
+    font-size: 26px;
+    font-family: "ubuntu-700";
+    margin-bottom: 2%;
+}
+.develop article p{
+    font-size: 16px;
+    font-family: "ubuntu-400";
+    line-height: 20px;
+    margin-bottom: 13%;
+}
+.develop .develop__card a{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "ubuntu-400";
+    letter-spacing: 1.2px;
+    transition: 0.3s ease;
+}
+.develop .develop__card a:nth-of-type(1){
+    background-color: #444;
+    color: #eee;
+    margin-bottom: 10px;
+}
+.develop .develop__card a:nth-of-type(2){
+    background-color: #eee;
+    color: #444;
+}
+.develop .develop__card a:nth-of-type(1):hover{
+    background-color: #eee;
+    color: #444;
+}
+.develop .develop__card a:nth-of-type(2):hover{
+    background-color: #444;
+    color: #eee;
+}
+
+
 header{
     width: 100vw;
     position: fixed;
@@ -447,6 +540,3 @@ header .gnb{
     top: 0;
     z-index: 99999;
 }
-/* .bottom__link{
-    bottom: 0;
-} */
