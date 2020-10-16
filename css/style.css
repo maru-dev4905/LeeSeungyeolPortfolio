@@ -415,6 +415,7 @@ article .work__card p{
 .design{
     background-color: #D2EFCE;
     width: 100vw;
+    min-height: 100vh;
 }
 .design .design__container{
     width: 100%;
@@ -585,4 +586,22 @@ header .gnb{
 .top__link{
     top: 0;
     z-index: 99999;
+}
+
+/* detail kingkroach */
+.design__detail{
+    background-color: #D2EFCE;
+    padding: 200px 5%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detail__img {
+    margin-bottom: 30px;
+}
+.detail__img:last-child{
+    margin-bottom: 0;
 }

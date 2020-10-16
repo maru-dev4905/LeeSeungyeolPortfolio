@@ -40,6 +40,17 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    /* detail */
+    .detail__img{
+        width: 50%;
+    }
+    .design__detail__content{
+        padding: 3%;
+    }
+    .design__detail__button img{
+        width: 32px;
+    }
 }
 
 @media all and (max-width:768px){
@@ -129,5 +140,8 @@
     }
      .work__card a{
         height: 50px;
+    }
+    .detail__img{
+        width: 100%;
     }
 }
