@@ -113,38 +113,27 @@
 /* about */
 .about__profile{
     width: 100vw;
-    height: calc(100vh - 50px);
 }
 .profile__container{
     width: 100%;
-    height: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 200px 20px;
 }
 .profile__box{
     display: flex;
     flex-direction: row-reverse;
-    position: relative;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
 }
 .profile__img{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
     transition: 0.3s ease;
 }
 .profile__img img{
     width: 363px;
     height: 436px;
     transition: 0.3s ease;
-}
-.profile__content{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .profile__content__container{
     position: relative;
@@ -172,7 +161,7 @@
 }
 .profile__content article{
     min-width: 350px;
-    min-height: 170px;
+    min-height: 130px;
     overflow: hidden;
     transition: 0.3s ease;
 }
@@ -375,12 +364,14 @@ article .work__card h2{
     font-size: 26px;
     font-family: "ubuntu-700";
     margin-bottom: 2%;
+    color: #222;
 }
 article .work__card p{
-    font-size: 16px;
+    font-size: 14px;
     font-family: "ubuntu-400";
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 13%;
+    color: #444;
 }
  .work__card a{
     width: 100%;
@@ -464,14 +455,14 @@ header{
     width: 100vw;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 50px;
     z-index: 999;
 }
 header .header__container{
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
@@ -481,7 +472,6 @@ header .pageName{
     font-family: "ubuntu-500";
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-top: 91px;
 }
 header .pageName::before{
     content: "";
@@ -493,7 +483,7 @@ header .pageName::before{
 }
 
 header .gnb{
-    margin-top: 100px;
+    margin-top: 10px;
 }
 .gnb ul{
     display: flex;
@@ -545,6 +535,97 @@ header .gnb{
     opacity: 0;
     height: 1px;
 }
+.hambuger__open--btn{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 5%;
+    z-index: 9999;
+    display: none;
+}
+.hambuger__open--btn span{
+    width: 100%;
+    height: 3px;
+    background-color: #444;
+    display: block;
+    position: absolute;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.hambuger__open--btn span:nth-child(1){
+    top: 0;
+    right: 0;
+}
+.hambuger__open--btn span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.hambuger__open--btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+}
+.hambuger__open--btn:hover span:nth-child(1){
+    width: 80%;
+}
+.hambuger__open--btn:hover span:nth-child(3){
+    width: 60%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: -360px;
+    width: 360px;
+    height: 100vh;
+    background-color: #EEEEEE;
+    z-index: 9999999;
+    padding: 50px;
+    transition: 0.3s ease;
+    font-size: 30px;
+    color: #444;
+    font-family: "ubuntu-700";
+    display: none;
+}
+.menu li, .hambuger__close--btn{
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #444;
+    font-family: "ubuntu-700";
+    width: 100%;
+    text-align: left;
+}
+.menu li a{
+    display: block;
+}
+.menu li::after,
+.menu .hambuger__close--btn::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease;
+    background-color: #444;
+    opacity: 0;
+    margin-top: 10px;
+}
+.menu li:hover::after,
+.menu .hambuger__close--btn:hover::after{
+    width: 50%;
+    opacity: 1;
+}
+.dim{
+    position: fixed;
+    left: 0;
+    width: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -99999;
+    opacity: 0;
+    transition: 0.3s ease;
+}
 
 [class$="__link"]{
     position: absolute;
@@ -585,7 +666,7 @@ header .gnb{
 
 .top__link{
     top: 0;
-    z-index: 99999;
+    z-index: 999;
 }
 
 /* detail kingkroach */

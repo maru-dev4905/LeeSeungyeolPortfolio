@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/mobile.css">
 
-    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <ul class="top__link">
@@ -50,7 +49,7 @@
             <nav class="gnb">
                 <ul>
                     <li>
-                        <a href="../index.html">
+                        <a href="./index.html">
                             <span class="gnb__firstText">h</span>
                             <span>
                                 ome
@@ -58,7 +57,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../about.html">
+                        <a href="./about.html">
                             <span class="gnb__firstText">a</span>
                             <span>
                                 bout
@@ -66,7 +65,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../develop.html">
+                        <a href="./develop.html">
                             <span class="gnb__firstText">d</span>
                             <span>
                                 evelop
@@ -74,7 +73,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../design.html">
+                        <a href="./design.html">
                             <span class="gnb__firstText">d</span>
                             <span>
                                 esign
@@ -85,6 +84,37 @@
             </nav>
         </div>
     </header>
+    <button class="hambuger__open--btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="dim"></div>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="./about.html">
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                <a href="./develop.html">
+                    DEVELOP
+                </a>
+            </li>
+            <li>
+                <a href="./design.html">
+                    DESIGN
+                </a>
+            </li>
+        </ul>
+        <button class="hambuger__close--btn">CLOSE</button>
+    </nav>
     <main class="design__detail">
         <img class="detail__img" src="../images/common/detail/marudepth-pc.png" alt="marudepth-pc">
         <img class="detail__img" src="../images/common/detail/marudepth-tablet.png" alt="marudepth-tablet">
@@ -102,5 +132,6 @@
             </a>
         </li>
     </ul>
+    <script src="./js/hambuger.js"></script>
 </body>
 </html>

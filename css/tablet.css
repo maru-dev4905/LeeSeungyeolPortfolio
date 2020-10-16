@@ -67,19 +67,12 @@
         bottom: -10px;
     }
     /* profile */
-    .about__profile {
-        height: 120vh;
+    .profile__box{
+        flex-direction: column;
+        justify-content:center;
     }
     .profile__img{
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    .profile__content{
-        top: auto;
-        transform: none;
-        bottom: 0;
-        width: 100%;
+        margin-bottom: 50px;
     }
     .profile__content__container{
         min-width: 320px;
@@ -143,5 +136,16 @@
     }
     .detail__img{
         width: 100%;
+    }
+
+    /* menu */
+    header .gnb{
+        display: none;
+    }
+    .hambuger__open--btn{
+        display: block;
+    }
+    .menu{
+        display: block;
     }
 }

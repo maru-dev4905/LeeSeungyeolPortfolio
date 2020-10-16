@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/mobile.css">
 
-    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -45,7 +44,7 @@
     <header>
         <div class="header__container">
             <h1 class="pageName">
-                about
+                design
             </h1>
             <nav class="gnb">
                 <ul>
@@ -85,6 +84,37 @@
             </nav>
         </div>
     </header>
+    <button class="hambuger__open--btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="dim"></div>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="./about.html">
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                <a href="./develop.html">
+                    DEVELOP
+                </a>
+            </li>
+            <li>
+                <a href="./design.html">
+                    DESIGN
+                </a>
+            </li>
+        </ul>
+        <button class="hambuger__close--btn">CLOSE</button>
+    </nav>
     <main class="about">
         <section class="about__profile">
             <div class="profile__container">
@@ -240,5 +270,6 @@
     </ul>
 
     <script src="./js/tabmenu.js"></script>
+    <script src="./js/hambuger.js"></script>
 </body>
 </html>
